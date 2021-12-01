@@ -11,6 +11,9 @@ class Day2:
     def run(self) -> None:
         self.utils.print_result(1, self.part1(), self.part2())
 
+    def parse_input(self) -> None:
+        pass
+
     def part1(self) -> int:
         return 0
 

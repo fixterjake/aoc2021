@@ -2,6 +2,7 @@ import argparse
 from helpers.utils import Utils
 
 from days.day1 import Day1
+from days.day2 import Day2
 
 
 def check_day(value):
@@ -27,6 +28,9 @@ def main() -> None:
     if args.day == 1:
         day_one = Day1(utils, args.regen)
         day_one.run()
+    elif args.day == 2:
+        day_two = Day2(utils, args.regen)
+        day_two.run()
     else:
         print(f"Day {args.day} not yet implemented")
 
