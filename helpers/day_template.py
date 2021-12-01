@@ -1,7 +1,7 @@
 from helpers.utils import Utils
 
 
-class Day1:
+class Day__DAY__:
     def __init__(self, utils: Utils) -> None:
         self.utils = utils
         self.input_raw = self.utils.download_file()
