@@ -18,7 +18,7 @@ def main() -> None:
     parser.add_argument("--regen", action="store_true", help="Redownload input")
     args = parser.parse_args()
 
-    utils = Utils(2020, args.day)
+    utils = Utils(2021, args.day)
 
     if args.gen:
         utils.generate_day()

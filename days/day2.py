@@ -1,7 +1,7 @@
 from helpers.utils import Utils
 
 
-class Day__DAY__:
+class Day2:
     def __init__(self, utils: Utils, regen: bool) -> None:
         self.utils = utils
         if regen:
@@ -10,9 +10,6 @@ class Day__DAY__:
 
     def run(self) -> None:
         self.utils.print_result(1, self.part1(), self.part2())
-
-    def parse_input(self) -> None:
-        pass
 
     def part1(self) -> int:
         return 0
