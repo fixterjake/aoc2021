@@ -20,7 +20,7 @@ class Utils:
             print(e)
             return 0
 
-    def download_file(self) -> str:
+    def download_file(self) -> None:
         if os.path.exists(f"days/inputs/day{self.day}.txt"):
             os.remove(f"days/inputs/day{self.day}.txt")
         with open(".env") as f:
