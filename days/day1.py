@@ -1,3 +1,4 @@
+import time
 from helpers.utils import Utils
 
 
@@ -9,13 +10,13 @@ class Day1:
         self.input_raw = self.utils.read_file()
 
     def run(self) -> None:
-        self.parse_input()
-        self.utils.print_result(1, self.part1(), self.part2())
-
-    def parse_input(self) -> None:
         self.input = list()
         for entry in self.input_raw:
             self.input.append(int(entry))
+        start = time.time()
+        part1 = self.part1()
+        part2 = self.part2()
+        self.utils.print_result(1, part1, part2, (time.time() - start))
 
     def part1(self) -> int:
         increase = 0

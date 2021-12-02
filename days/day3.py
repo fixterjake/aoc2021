@@ -2,7 +2,7 @@ import time
 from helpers.utils import Utils
 
 
-class Day__DAY__:
+class Day3:
     def __init__(self, utils: Utils, regen: bool) -> None:
         self.utils = utils
         if regen:
@@ -13,7 +13,7 @@ class Day__DAY__:
         start = time.time()
         part1 = self.part1()
         part2 = self.part2()
-        self.utils.print_result(__DAY__, part1, part2, (time.time() - start))
+        self.utils.print_result(2, part1, part2, (time.time() - start))
 
     def part1(self) -> int:
         return 0
