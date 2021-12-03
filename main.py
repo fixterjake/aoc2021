@@ -1,12 +1,13 @@
 import argparse
-from helpers.utils import Utils
 
 from days.day1 import Day1
 from days.day2 import Day2
 from days.day3 import Day3
+from days.day4 import Day4
+from helpers.utils import Utils
 
 
-def check_day(value):
+def check_day(value: str) -> int:
     ivalue = int(value)
     if ivalue <= 0 or ivalue > 25:
         raise argparse.ArgumentTypeError(f"{value} is an invalid day")
@@ -35,6 +36,9 @@ def main() -> None:
     elif args.day == 3:
         day_three = Day3(utils, args.download)
         day_three.run()
+    elif args.day == 4:
+        day_four = Day4(utils, args.download)
+        day_four.run()
     else:
         print(f"Day {args.day} not yet implemented")
 

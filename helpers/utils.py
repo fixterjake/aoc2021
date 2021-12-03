@@ -16,8 +16,7 @@ class Utils:
             with open(f"days/day{self.day}.py", "w") as f:
                 f.write(template.replace("__DAY__", str(self.day)))
             return 1
-        except Exception as e:
-            print(e)
+        except Exception:
             return 0
 
     def download_file(self) -> None:
@@ -44,7 +43,11 @@ class Utils:
             exit(1)
 
     def print_result(
-        self, day: int, result_one: str, result_two: int, time: float
+        self,
+        day: int,
+        result_one: int,
+        result_two: int,
+        time: float,
     ) -> None:
         print(f"Day {day}")
         print(f"Part 1: {result_one}")
